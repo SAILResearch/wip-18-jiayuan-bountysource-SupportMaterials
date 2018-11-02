@@ -1,0 +1,214 @@
+\RequirePackage{fix-cm}
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+%\usepackage[toc,page]{appendix}
+\usepackage{rotating}
+\usepackage{subcaption}
+
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{comment}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=false, linkcolor=blue, citecolor=blue, bookmarks=true,pagebackref=false]{hyperref}
+\usepackage{hyphenat}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{fancybox}
+\usepackage{array,booktabs}
+\usepackage{marvosym} % For the \Letter command
+%\usepackage{textcomp} % arrow
+%\usepackage{tablefootnote} % footnote in table
+\usepackage{balance}
+\usepackage{ragged2e}
+\usepackage{makecell}
+\usepackage{bigstrut}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{amssymb,mathtools}
+\newcommand{\rqbox}[1]{
+	\begin{center}
+	\vspace{0cm}
+	\cornersize{.2}
+	\setlength{\fboxsep}{5pt}
+	\ovalbox{\begin{minipage}{3.3in}
+	{\em #1}
+	\end{minipage}}
+	\vspace{-0.1cm}
+
+	\end{center}
+}
+
+
+\newcommand{\sw}[1]{\textcolor{red}{{\it [Shaowei says: #1]}}}
+\newcommand{\jy}[1]{\textcolor{blue}{{\it [Jiayuan says: #1]}}}
+\newcommand{\cp}[1]{\textcolor{red}{{\it [CP says: #1]}}}
+
+\newcommand{\jyrm}[1]{\textcolor{blue}{{\it [REMOVE: #1]}}}
+
+\newcommand{\code}[1]{{\texttt{#1}}}
+
+
+
+\begin{document}
+
+%=================== Title Here =================%
+\title{Bounties in Open Source Development on GitHub: A Case Study of Bountysource Bounties}
+%=================== Author Info Here =================%
+
+\author{Jiayuan~Zhou,
+        Shaowei~Wang,
+        Cor-Paul~Bezemer,
+        Ying~Zou,~\IEEEmembership{Member,~IEEE,}
+        and~Ahmed~E.~Hassan,~\IEEEmembership{Member,~IEEE}
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem J. Zhou, S. Wang and A. E. Hassan are with the Software Analysis and Intelligence Lab (SAIL), Queen's University, Kingston, Ontario, Canada.\protect\\
+% note need leading \protect in front of \\ to get a newline within \thanks as
+% \\ is fragile and will error, could use \hfil\break instead.
+E-mail: {jzhou,shaowei,ahmed}@cs.queensu.ca
+\IEEEcompsocthanksitem CP Bezemer is with the Department of Electrical and Computer Engineering, University of Alberta, Edmonton,
+              AB, Canada
+E-mail: bezemer@ualberta.ca
+\IEEEcompsocthanksitem Y. Zou is with the Department of Electrical and Computer Engineering, Queen's University, Kingston, Ontario, Canada.\protect\\
+E-mail: ying.zou@queensu.ca
+\IEEEcompsocthanksitem Shaowei Wang is the corresponding author.
+}
+
+}
+
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Computer Society Journals}
+
+% in the abstract or keywords.
+\IEEEtitleabstractindextext{
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Software evolution, open source software, Bountysource, bounties, GitHub 
+\end{IEEEkeywords}
+
+}
+
+
+%=================== Introduction Here =================%
+% make the title area
+\maketitle
+
+%\IEEEdisplaynontitleabstractindextext
+
+%\IEEEpeerreviewmaketitle
+
+%\IEEEraisesectionheading{
+\section{Introduction}\label{sec:introduction}
+\input{introduction}
+
+%=================== Background =================%
+\section{Background}
+\label{background}
+\input{background}
+
+%=================== Dataset Here =================%
+\section{Data collection}
+%\label{rq}
+%\input{rq}
+\label{dataset}
+\input{dataset}
+
+%=================== Preliminary study Here =================%
+\section{Preliminary Study}
+\label{prestudy}
+\input{prestudy}
+
+
+%=================== RQ 1 Here =================%
+\section{Studying how the issue-addressing likelihood changes across projects which have different bounty-usage frequencies}
+
+\label{rq1}
+\input{rq1}
+
+
+%=================== RQ 2 Here =================%
+\section{Studying the relationship between the timing of proposing a bounty and the issue-addressing likelihood}
+\label{rq2}
+\input{rq2.tex}
+
+%=================== RQ 3 Here =================%
+
+\section{Using a logistic regression model to study the relationship between the studied factors and the issue-addressing likelihood}
+
+\label{rq3}
+\input{rq3.tex}
+
+
+
+\section{Discussion}
+\label{sec:dis}
+\input{discussion}
+
+\section{Threats to Validity}
+\label{sec:threats}
+\input{threats}
+%\label{limitation}
+%\input{limitation}
+
+%=================== Related Work Here =================%
+\section{Related work}
+\label{relatedwork}
+\input{relatedwork}
+
+%=================== Conclusion Here =================%
+\section{Conclusion}
+\label{conclusion}
+\input{conclusion}
+
+
+
+%=================== References Here =================%
+\balance
+\bibliographystyle{abbrv}
+{
+\footnotesize
+\bibliography{ref}
+}
+
+\begin{comment}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{bio/jiayuan.png}}]{Jiayuan Zhou}
+Jiayuan Zhou
+\end{IEEEbiography}
+
+% if you will not have a photo at all:
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{bio/shaowei.jpg}}]{Shaowei Wang}
+Shaowei Wang
+\end{IEEEbiography}
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{bio/corpaul.png}}]{Cor-Paul~Bezemer}
+Cor-Paul~Bezemer
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{bio/jenny.jpg}}]{Ying Zou}
+Ying Zou
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{bio/ahmed.png}}]{Ahmed E. Hassan}
+Ahmed E. Hassan
+\end{IEEEbiography}
+\end{comment}
+
+%\begin{appendices}
+%\renewcommand \appendixname{Appendix}
+%\label{appendix}
+%\include{appendix}
+%\end{appendices}
+
+
+
+\end{document}

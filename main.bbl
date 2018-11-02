@@ -1,0 +1,171 @@
+\begin{thebibliography}{10}
+
+\bibitem{bauer1972constructing}
+D.~F. Bauer.
+\newblock Constructing confidence sets using rank statistics.
+\newblock {\em Journal of the American Statistical Association},
+  67(339):687--690, 1972.
+
+\bibitem{bettenburg2008makes}
+N.~Bettenburg, S.~Just, A.~Schr{\"o}ter, C.~Weiss, R.~Premraj, and
+  T.~Zimmermann.
+\newblock What makes a good bug report?
+\newblock In {\em Proc. of the Int'l Symp. on Foundations of Software
+  Engineering}, pages 308--318. ACM, 2008.
+
+\bibitem{efron1986biased}
+B.~Efron.
+\newblock How biased is the apparent error rate of a prediction rule?
+\newblock {\em Journal of the American Statistical Association},
+  81(394):461--470, 1986.
+
+\bibitem{finifter2013empirical}
+M.~Finifter, D.~Akhawe, and D.~Wagner.
+\newblock An empirical study of vulnerability rewards programs.
+\newblock In {\em USENIX Security Symp.}, pages 273--288, 2013.
+
+\bibitem{cohenkappa}
+K.~Gwet et~al.
+\newblock Inter-rater reliability: dependency on trait prevalence and marginal
+  homogeneity.
+\newblock {\em Statistical Methods for Inter-Rater Reliability Assessment
+  Series}, 2:1--9, 2002.
+
+\bibitem{Harrell:2006}
+F.~E. Harrell, Jr.
+\newblock {\em Regression Modeling Strategies}.
+\newblock Springer-Verlag New York, Inc., Secaucus, NJ, USA, 2006.
+
+\bibitem{hata2017understanding}
+H.~Hata, M.~Guo, and M.~A. Babar.
+\newblock Understanding the heterogeneity of contributors in bug bounty
+  programs.
+\newblock In {\em Proc. of the ACM/IEEE Int'l Symp. on Empirical Software
+  Engineering and Measurement}, pages 223--228, 2017.
+
+\bibitem{hooimeijer2007modeling}
+P.~Hooimeijer and W.~Weimer.
+\newblock Modeling bug report quality.
+\newblock In {\em Proc. of the Int'l Conf. on Automated Software Engineering},
+  pages 34--43. ACM, 2007.
+
+\bibitem{kabinna2018examining}
+S.~Kabinna, C.-P. Bezemer, W.~Shang, M.~D. Syer, and A.~E. Hassan.
+\newblock Examining the stability of logging statements.
+\newblock {\em Empirical Software Engineering}, 23(1):290--333, 2018.
+
+\bibitem{kanda2017towards}
+T.~Kanda, M.~Guo, H.~Hata, and K.~Matsumoto.
+\newblock Towards understanding an open-source bounty: Analysis of
+  {B}ountysource.
+\newblock In {\em Int'l Conf. on Software Analysis, Evolution and
+  Reengineering}, pages 577--578. IEEE, 2017.
+
+\bibitem{krishnamurthy2006bounty}
+S.~Krishnamurthy and A.~K. Tripathi.
+\newblock Bounty programs in free/libre/open source software.
+\newblock In {\em The Economics of Open Source Software Development}, pages
+  165--183. Elsevier, 2006.
+
+\bibitem{long2003ordinal}
+J.~D. Long, D.~Feng, and N.~Cliff.
+\newblock Ordinal analysis of behavioral data.
+\newblock {\em Handbook of psychology}, 2003.
+
+\bibitem{maillart2017given}
+T.~Maillart, M.~Zhao, J.~Grossklags, and J.~Chuang.
+\newblock Given enough eyeballs, all bugs are shallow? {Revisiting Eric Raymond
+  with bug bounty programs}.
+\newblock {\em Journal of Cybersecurity}, 3(2):81--90, 2017.
+
+\bibitem{mcintosh2016empirical}
+S.~McIntosh, Y.~Kamei, B.~Adams, and A.~E. Hassan.
+\newblock An empirical study of the impact of modern code review practices on
+  software quality.
+\newblock {\em Empirical Software Engineering}, 21(5):2146--2189, 2016.
+
+\bibitem{Ortu:2015}
+M.~Ortu, B.~Adams, G.~Destefanis, P.~Tourani, M.~Marchesi, and R.~Tonelli.
+\newblock Are bullies more productive?: Empirical study of affectiveness vs.
+  issue fixing time.
+\newblock In {\em Proc. of the Working Conf. on Mining Software Repositories},
+  pages 303--313, 2015.
+
+\bibitem{gopi:2017}
+G.~K. Rajbahadur, S.~Wang, Y.~Kamei, and A.~E. Hassan.
+\newblock The impact of using regression models to build defect classifiers.
+\newblock In {\em Proc. of the Int'l Conf. on Mining Software Repositories},
+  pages 135--145, 2017.
+
+\bibitem{romano2006appropriate}
+J.~Romano, J.~D. Kromrey, J.~Coraggio, and J.~Skowronek.
+\newblock Appropriate statistics for ordinal level data: Should we really be
+  using t-test and {Cohen's} d for evaluating group differences on the {NSSE}
+  and other surveys.
+\newblock In {\em Annual meeting of the Florida Association of Institutional
+  Research}, pages 1--33, 2006.
+
+\bibitem{Saha:2013}
+R.~K. Saha, M.~Lease, S.~Khurshid, and D.~E. Perry.
+\newblock Improving bug localization using structured information retrieval.
+\newblock In {\em Proc. of the IEEE/ACM Int'l Conf. on Automated Software
+  Engineering}, pages 345--355, 2013.
+
+\bibitem{Soto:2016}
+M.~Soto, F.~Thung, C.-P. Wong, C.~Le~Goues, and D.~Lo.
+\newblock A deeper look into bug fixes: Patterns, replacements, deletions, and
+  additions.
+\newblock In {\em Proc. of the Int'l Conf. on Mining Software Repositories},
+  pages 512--515, 2016.
+
+\bibitem{wang2017understanding}
+S.~Wang, T.-H. Chen, and A.~E. Hassan.
+\newblock Understanding the factors for fast answers in technical {Q\&A}
+  websites.
+\newblock {\em Empirical Software Engineering}, pages 1--42, 2017.
+
+\bibitem{WangL16}
+S.~Wang and D.~Lo.
+\newblock Amalgam+: Composing rich information sources for accurate bug
+  localization.
+\newblock {\em Journal of Software: Evolution and Process}, 28(10):921--942,
+  2016.
+
+\bibitem{WangLL14}
+S.~Wang, D.~Lo, and J.~Lawall.
+\newblock Compositional vector space models for improved bug localization.
+\newblock In {\em {IEEE} Int'l Conf. on Software Maintenance and Evolution},
+  pages 171--180, 2014.
+
+\bibitem{zhao2014exploratory}
+M.~Zhao, J.~Grossklags, and K.~Chen.
+\newblock An exploratory study of white hat behaviors in a web vulnerability
+  disclosure program.
+\newblock In {\em Proc. of the Workshop on Security Information Workers}, pages
+  51--58. ACM, 2014.
+
+\bibitem{zhao2017devising}
+M.~Zhao, A.~Laszka, and J.~Grossklags.
+\newblock Devising effective policies for bug-bounty platforms and security
+  vulnerability discovery.
+\newblock {\em Journal of Information Policy}, 7:372--418, 2017.
+
+\bibitem{Zhong:2015}
+H.~Zhong and Z.~Su.
+\newblock An empirical study on real bug fixes.
+\newblock In {\em Proc. of the Int'l Conf. on Software Engineering}, pages
+  913--923, 2015.
+
+\bibitem{appendix}
+J.~Zhou.
+\newblock Supplementary material for our paper.
+\newblock \url{https://github.com/yiikou/Bountysource/appendix.pdf}, 2018.
+
+\bibitem{Zhou:2012}
+J.~Zhou, H.~Zhang, and D.~Lo.
+\newblock Where should the bugs be fixed? - more accurate information
+  retrieval-based bug localization based on bug reports.
+\newblock In {\em Proceedings of the 34th International Conference on Software
+  Engineering}, pages 14--24, 2012.
+
+\end{thebibliography}

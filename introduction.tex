@@ -1,0 +1,41 @@
+%Issue-fix is important
+
+Software projects often use issue tracking systems to store and manage issue reports. Developers or users submit issue reports to report bugs or request new features, and wait for these issues to be addressed. However, some issue reports may never be addressed.
+For example, developers may avoid addressing issues that they consider too low priority, or difficult to implement. To encourage developers to address such issue reports, a \textit{bounty} can be proposed by one or more \textit{backers} for the issue reports.
+
+A bounty is a monetary reward that is often used in the area of software vulnerabilities. Prior studies examined the impact of bounties on vulnerability discovery \cite{zhao2017devising, hata2017understanding,finifter2013empirical}. Finifter et al.~\cite{finifter2013empirical} suggested that using bounties as an incentive to motivate developers to find security flaws is more cost-effective than hiring full-time security researchers.
+
+Bounties are now being used to motivate developers to address issue reports, e.g., to fix bugs, to improve performance, or to add new features.
+$Bountysource$\footnote{\url{https://www.bountysource.com}} is a platform for proposing bounties for open source projects across multiple platforms (e.g., GitHub) which currently has more than 46,000 registered developers.\footnote{\url{%https://blog.canya.com/2017/12/20/canya-acquires-majority-stake-in-bountysource-adds-over-46000-users/
+http://bit.ly/2RkDeCc}} Although bounties are used in the issue-addressing process, the relationship between bounties and this process is not yet understood. For example, it is unclear whether a bounty improves the likelihood of an issue being addressed (i.e., the issue-addressing likelihood) in projects. By understanding this relationship, we could provide insights on how to better leverage bounties to evolve open source projects, and on how to improve the usability and effectivity of bounty platforms.
+
+
+In this paper, we study 3,509 issue reports with 5,445 bounties that were proposed on Bountysource from 1,203 GitHub projects, with a total bounty value of \$406,425. We first examine the impact of the frequency of bounties (i.e., the bounty-usage frequency) being used in projects and the timing of proposing bounties on the likelihood of an issue being addressed. We found that:
+\begin{enumerate}
+    \item Bounty issue reports are more likely to be addressed in projects which are using bounties more frequently. Backers of the projects in which bounties were not used before proposed higher bounty values to get issues addressed.
+    \item Bounty issue reports for which bounties were proposed earlier are more likely to be addressed. Additionally, there is a risk of wasting money for backers who invest money on long-standing issue reports.
+\end{enumerate}
+
+To understand if there are other factors that have an impact on the issue-addressing likelihood, we use logistic regression to study the relationship between 27 factors (including the timing of proposing a bounty and the bounty-usage frequency of a project) along 4 dimensions (i.e., project, issue, bounty, and backer) and the issue-addressing likelihood. We found that for bounty issue reports:
+\begin{enumerate}
+\item The timing of proposing bounties and the bounty-usage frequency are the two most important factors that impact the issue-addressing likelihood.
+\item The total bounty value that an issue report has is the most important factor that impacts the issue-addressing likelihood in the first-timer projects.
+\end{enumerate}
+
+
+We also performed a manual study on the addressed bounty issue reports in which the bounty remained unclaimed (i.e., the cases in which bounties were ignored by developers). We found that some developers addressed an issue cooperatively, making it difficult to choose a single developer that would be awarded the bounty. In addition, some developers are not driven by money to address issues.
+
+Based on our findings, we have several suggestions for backers and the Bountysource platform. For example, backers should be cautious when proposing small (i.e., $< \$100$) bounties on long-standing issue reports since the risk of losing the bounty exists. Bounty platforms should consider allowing for splittable multi-hunter bounties.
+
+
+
+% the impact of the paper
+
+
+The rest of the paper is organized as follows.
+Section~\ref{background} presents background information about GitHub and Bountysource.
+Section~\ref{dataset} describes our data collection process.
+Section~\ref{prestudy} introduces our preliminary study.
+Section~\ref{rq1} and Section~\ref{rq2} study the impact of the bounty on the issue-addressing likelihood in terms of projects' bounty-usage frequency and the timing of proposing bounties.
+Section~\ref{rq3} investigates more factors that may potentially affect the issue-addressing likelihood.
+ Section~\ref{sec:dis} studies the closed-unpaid bounty issue reports and discusses the implications of our study. Section~\ref{sec:threats} discusses the threats to validity of our study. Section~\ref{relatedwork} introduces related work. Finally, Section~\ref{conclusion} concludes our study.

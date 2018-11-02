@@ -1,0 +1,39 @@
+In this section, we discuss related work along two dimensions: the bounty in software engineering and the improvement of the issue-addressing process.
+
+\textit{Bounties in software development:}
+Bounties are used to attract developers and motivate them to complete tasks. Prior work has studied the impact of bounties on software development. \cite{krishnamurthy2006bounty} gave an overview of bounties in Free/Libre/Open Source Software (FLOSS).
+They observed that bounty hunters' responses are related to the workload, the probability of winning the bounty, the value of the bounty and the recognition that they might receive by winning the bounty. Different from their study, we focused on using bounties to improve the issue addressing process.
+
+\begin{comment}
+    Once the profit is higher than the workload, they will respond to the bounty. However, it is very hard to evaluate the profit and workload in an accuracy way.
+\end{comment}
+
+Several studies focused on the usage of bounties to motivate developers to detect software security vulnerabilities.
+Finifter et al.~\cite{finifter2013empirical} analyzed vulnerability rewards programs for Chrome and Firefox. They found that the rewards programs for both projects are economically effective, compared to the cost of hiring full-time security researchers.
+Zhao et al.~\cite{zhao2014exploratory} investigated the characteristics of hunters in bug-bounty programs and found that the diversity of hunters improved the productivity of the vulnerability discovery process. Hata et al.~\cite{hata2017understanding} found that most hunters are not very active (i.e., they have only a few contributions). These findings are similar to our finding that most hunters only addressed one bounty issue. %Hata et al.~\cite{hata2017understanding} performed a user study to understand why developers made a contribution to the bug-bounty program and found that most of the contributors were driven by other factors (e.g., using the product) than money.
+Zhao et al. and Maillart et al.~\cite{zhao2017devising,maillart2017given} analyzed the effect of different policies of bug-bounty programs.
+By studying bug-bounties from several perspectives, they provided insights on how to improve the bug-bounty programs. For example, Maillart et al.~\cite{maillart2017given} suggested project managers to dynamically adjust the value of rewards according to the market situation (e.g., increase rewards when releasing a new version).
+%They found bounty programs more cost-effective compared to hiring full-time security researchers in terms of finding security flaws
+
+
+However, there is not much research to study the effectiveness of bounties in the issue-addressing process.
+The work of Kanda et al.~\cite{kanda2017towards} is closest to ours. They studied GitHub and Bountysource data but studied only 31 projects (compared to 1,203 in our study). They compared the closed-rate and closing-time between bounty issue and non-bounty issue reports. Their results showed that the closing-rate of bounty issue reports is lower than that of non-bounty issue reports, and it takes longer for the bounty issue reports to get closed than non-bounty issue reports.
+%They also analyzed the top three bounty backers and found that some big-value bounties were provided to directly hire developers rather than reward bounty hunters.
+Our study performs a deeper analysis of bounties at the project and the time level. Besides, we further study the relationship between the issue-addressing likelihood and the bounty-related factors (e.g., the total bounty value of a bounty issue report) while controlling for the factors that are related to the issue report and project (e.g., the number of comments before the first bounty is proposed). We found that the timing and the bounty-usage frequency are the most important factors in increasing the issue-addressing likelihood.
+
+
+\textit{Improving the issue-addressing process:}
+%Developers and users are encouraged to report issues in issue tracking systems because the feedback from user communities is important for the evolution of a software development project (\cite{bagozzi2006open,hendry2008public}). %\cite{bissyande2013got} further investigated the popularity and impact of issue trackers and revealed the relation between issue reporters and issues.
+Issue addressing is an essential activity in the life cycle of software development and maintenance. Therefore, a large amount of research was done to improve the issue-addressing process.
+One group of studies focused on providing insights into improving the issue-addressing process in aspects of the quality of issue reports, the effectiveness of developers and automated bug localization and fixing.
+For example, Bettenburg et al.~\cite{bettenburg2008makes,hooimeijer2007modeling} analyzed the quality of bug reports (i.e., a type of issue report) and provided some guidelines for users to generate high-quality reports so that developers can address issues more efficiently. Ortu et al.~\cite{Ortu:2015} analyzed the relation between sentiment, emotions, and politeness of developers in comments with needed time to address an issue. They found that the happier developers are, the shorter the issue-addressing time is likely to be. Zhong et al.~\cite{Zhong:2015} performed an empirical study on real-world bug fixes to provide insights and guideline for improving the state-of-the-art of automated program repair. Soto et al.~\cite{Soto:2016} performed a large-scale study of bug-fixing commits in Java projects and provided insights for high-quality automated software repair to target Java code.
+A number of studies helped developers locate the buggy code in projects using information retrieval techniques~\cite{Zhou:2012,Saha:2013,WangL16,WangLL14}.
+\begin{comment}
+
+Another group of studies focused on developing automated tools to facilitate the issue-addressing process. \cite{Zhou:2012,Saha:2013,WangL16,WangLL14} leveraged textual and structural information in a bug report to help developers locate the buggy code in projects using information retrieval techniques. \cite{Lam:2015,XiaoKMB17} leveraged deep learning techniques to facilitate the bug localization task.
+\cite{anvik2006should} invented an SVM-based approach to semi-automatically assign bug reports to developers. \cite{hosseini2012market} improved bug assignment mechanism with a market-based approach to speed up the bug-fixing process. \cite{XuanJHRZLW15,hu2014effective,goyal2017effective} proposed an approach to recommend suitable developers to fix bugs.
+
+\end{comment}
+Different from prior studies, we perform an empirical study to understand the relationship between bounties and the issue-addressing process. We provide insights into how to better use the bounty to improve the issue-addressing process.
+
+

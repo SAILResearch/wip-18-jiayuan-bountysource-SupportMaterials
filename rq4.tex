@@ -1,0 +1,44 @@
+
+%\noindent\textbf{Motivation:}
+%\sw{update later}
+In Section~\ref{prestudy}, we observed that in 19.7\% of the bounty issue reports the bounties were ignored (i.e., closed-unpaid). For these ignored bounty issue reports, the issue reports were closed but the bounties remained unclaimed.
+It seems that money was not the driver that motivated developers to address these issues.
+To understand the possible reasons behind this phenomenon, we manually studied all 692 ignored bounty issue reports (with a total bounty value of \$41,856).
+Because the ``closed'' status of an issue report does not necessarily mean that the issue was addressed (e.g., a report may have been a duplicate of another issue report), it is very difficult to automatically identify whether an issue in the closed issue report was addressed or not.
+Therefore, we need to manually examine the closed-unpaid bounty issues reports to filter out the reports that were closed for another reason than the issue being addressed.
+
+%The first two authors independently manually examined these reports and their corresponding discussion to decide whether these particular reports were addressed. Discrepancies were discussed by the two authors until a consensus was reached. We use Cohen's kappa~\cite{cohenkappa} to measure the inter-rater agreement and the value was 0.86, which is considered as an almost perfect agreement \cite{landis1977measurement}. During the examination, the authors also searched for comments that gave an explicit reason as to why no developer claimed the bounty.
+
+%\begin{figure}[t]
+%\centering\includegraphics[width=\columnwidth]{pics/rq2/newrq2_distribution_hunter_issue_cnt.pdf}
+%  \caption{The number and proportion (presented at the top of each bar) of hunters that addressed x bounty issue reports in the past.  }
+%  \label{hunter_isseu_cnt}
+%\end{figure}
+
+
+%479/(479+1508)
+\textbf{21.8\% (479 out of 2,200) of the addressed bounty issue reports were not paid out.} We identified that 479 out of the studied 692 bounty issue reports were closed because the issues were addressed. Such cases are interesting since the developers could have claimed the bounty but they did not. We manually examined the discussion for these 479 issue reports. We identified 19 cases in which developers gave an explanation for not claiming the bounty. We grouped the explanations as follows:
+
+\noindent\textbf{The developer is not driven by money.} In 7 out of 19 cases a developer refused to claim the bounty because they were not motivated by money to address the issue.
+For example, one developer was against the bounty because they felt that the issue-addressing process should be driven by the interests of the community rather than money. A contributor of the \code{Brython} project,%\footnote{\url{https://brython.info/}}
+ refused the bounty because he wanted to keep \code{Brython} free from monetary motivations: ``\textit{What is this `bounty' thing? Needless to say, I refuse that anybody (me included, of course) gets paid for anything related to \code{Brython}.}''\footnote{\url{%https://github.com/brython-dev/brython/issues/680\#issuecomment-330474874
+http://bit.ly/2OTYx0x}} In addition, he also asked bounty backers to remove all bounties within the \code{Brython} project although he respected prior bounties that were paid out. There were five bounty issue reports in the \code{Brython} project and four bounty issue reports that were addressed without claiming the bounty.
+
+%Similarly to the \code{Brython} project, the owner of the \code{Pi-hole} project\footnote{\url{https://pi-hole.net/}}, shut down\footnote{\url{https://github.com/pi-hole/pi-hole/issues/371\#issuecomment-379938463}} the usage of the bounty within \code{Pi-hole} because he believed \code{Pi-hole} should be driven by the community need instead of money.
+%The developers refused to receive bounties directly since they think that financial incentive should not be involved in open source projects.
+
+\noindent\textbf{The developer is afraid of sending the wrong message.} Krishnamurthy et al. \cite{krishnamurthy2006bounty} pointed out that financial incentives may cause confusion in the community because the financial incentives may drive a project's own product development cycle away from what is in place.
+We observed that developers expressed similar concerns. A developer of the \code{Facebook/HHVM} project,%\footnote{\url{https://hhvm.com/}}
+ explained that: ``\emph{That's very generous of you, but I can't accept a bounty for doing my job. :-P It would be a conflict of interest, and I worry it sends the wrong message about how we prioritize issues from the community.}''\footnote{\url{%https://github.com/facebook/hhvm/issues/1203\#issuecomment-55794203
+http://bit.ly/2OZw1uw}}
+
+%In another example, a developer of the \code{OSVR} project\footnote{\url{http://www.osvr.org/}} refused to claim the bounty and explained: ``\textit{I've already been paid for my part in this code, so I'm happy to see the bounty distributed to the others.}''
+
+
+
+
+\noindent\textbf{The issue report was addressed by more than one developer.} We found nine cases where bounties ended up unclaimed because an issue report was addressed by multiple developers cooperatively and they felt inappropriate to claim the bounty by one developer. For example, the issue\footnote{\url{%https://github.com/numixproject/numix-icon-theme/issues/450/\#issuecomment-143499209
+http://bit.ly/2PrMiHV}} was addressed by two developers and because a bounty cannot be split into two parts, no one claimed it.
+
+
+
